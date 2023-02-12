@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  font-family: "Poppins";
+  color: #333333;
+}
+
+h1, h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 12px;
+  color: #2D9CDB;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 10px;
+  color: #828282;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Heebo";
+  font-weight: 800;
+}
+
+.padding-mobile {
+  padding-left: 25px;
+  padding-right: 45px;
+}
+
+.padding-mobile-img {
+  padding: 0 15px;
+}
+
+.contact-container {
+  max-width: 350px;
+}
+.contact-container .contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background: #F2F2F2;
+  border-radius: 12px;
+  padding: 4px 4px 4px 0;
+}
+.contact-container .contact input {
+  font-family: "Poppins";
+  background: transparent;
+  border: none;
+  margin-left: 19px;
+  width: auto;
+  color: #333333;
+  width: 100%;
+}
+.contact-container .contact input::-moz-placeholder {
+  color: #BDBDBD;
+}
+.contact-container .contact input::placeholder {
+  color: #BDBDBD;
+}
+.contact-container .contact button {
+  padding: 13px 20px;
+  border: none;
+  background: #2D9CDB;
+  color: white;
+  border-radius: 12px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 15px;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+.hero p {
+  font-weight: 400;
+}
+
+.offerings {
+  padding: 50px 15px;
+}
+.offerings h1 {
+  padding-left: 35px;
+  padding-bottom: 90px;
+}
+.offerings .cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.offerings .cards-container .card {
+  padding: 50px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 24px;
+  transition: all 0.6s;
+}
+.offerings .cards-container .card .card-icon {
+  width: 67px;
+  height: 67px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+}
+.offerings .cards-container .card .card-icon i {
+  color: #FFFFFF;
+}
+.offerings .cards-container .card h2 {
+  font-weight: 700;
+}
+.offerings .cards-container .card button {
+  padding: 9px 13px;
+  border: none;
+  border-radius: 12px;
+  background: #E0E0E0;
+  color: #828282;
+  transition: all 0.6s;
+}
+.offerings .cards-container .card button:hover {
+  background: #2D9CDB;
+  color: #FFFFFF;
+}
+.offerings .cards-container .card:hover {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+footer {
+  background-color: #100E1D;
+  color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 15px 25px 15px;
+  gap: 65px;
+}
+footer a {
+  color: #F2F2F2;
+}
+footer .footer-links, footer .social, footer .created-by {
+  padding-left: 25px;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .social h1 {
+  font-size: 36px;
+}
+footer .social div {
+  display: flex;
+  gap: 10px;
+}
+footer .social div i {
+  font-size: 24px;
+}
+footer .created-by {
+  color: #F2F2F2;
+  font-size: 11px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+footer .created-by a {
+  font-weight: 700;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
