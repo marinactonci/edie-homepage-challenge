@@ -31,18 +31,48 @@ a {
   text-decoration: none;
 }
 
+.d-none {
+  display: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+header a {
+  color: #333333;
+}
+header i {
+  font-size: 24px;
+}
+
 .logo {
   font-family: "Heebo";
   font-weight: 800;
+  font-size: 24px;
 }
 
-.padding-mobile {
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 15px;
+}
+.hero h1, .hero h2, .hero h3, .hero p {
   padding-left: 25px;
-  padding-right: 45px;
 }
-
-.padding-mobile-img {
-  padding: 0 15px;
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+.hero #hero2 {
+  display: none;
+}
+.hero p {
+  font-weight: 400;
 }
 
 .contact-container {
@@ -78,21 +108,10 @@ a {
   background: #2D9CDB;
   color: white;
   border-radius: 12px;
+  transition: all 0.6s;
 }
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 50px 15px;
-}
-.hero img {
-  width: 100%;
-  height: auto;
-  border-radius: 18px;
-}
-.hero p {
-  font-weight: 400;
+.contact-container .contact button:hover {
+  background: #174d6d;
 }
 
 .offerings {
@@ -144,19 +163,126 @@ a {
   box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
 }
 
+.projects {
+  padding: 50px 15px;
+}
+.projects h1 {
+  padding-left: 30px;
+}
+.projects .projects-container {
+  padding-top: 50px;
+  padding-bottom: 35px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.projects .projects-container .project {
+  width: 100%;
+}
+.projects .projects-container .project img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+.projects .projects-container .project h3 {
+  color: #828282;
+  margin-top: 10px;
+}
+.projects .projects-container .project h2 {
+  font-size: 18px;
+}
+.projects .see-more {
+  display: flex;
+  justify-content: flex-start;
+}
+.projects .see-more a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #2D9CDB;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.projects .see-more a:hover {
+  gap: 20px;
+}
+
+.meet-the-team {
+  padding: 50px 15px;
+}
+.meet-the-team h2 {
+  color: #EB5757;
+  font-size: 18px;
+}
+.meet-the-team h1 {
+  font-size: 36px;
+  padding: 15px 0;
+}
+.meet-the-team p {
+  color: #4F4F4F;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+.meet-the-team .team-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.meet-the-team .team-images #person3 {
+  display: flex;
+  align-items: center;
+}
+.meet-the-team .team-images #person1 {
+  width: 90%;
+}
+.meet-the-team .team-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+.about-us {
+  padding: 50px 15px;
+}
+.about-us .about-us-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.about-us .about-us-container img {
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+}
+.about-us .about-us-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about-us .about-us-container div h2 {
+  font-size: 24px;
+}
+.about-us .about-us-container div h3 {
+  font-size: 18px;
+  color: #828282;
+}
+
 footer {
   background-color: #100E1D;
   color: #F2F2F2;
+  padding-left: 15px;
+  padding-top: 40px;
+}
+footer .footer-container {
   display: flex;
   flex-direction: column;
-  padding: 40px 15px 25px 15px;
   gap: 65px;
+  padding-bottom: 150px;
 }
 footer a {
   color: #F2F2F2;
-}
-footer .footer-links, footer .social, footer .created-by {
-  padding-left: 25px;
 }
 footer .footer-links {
   display: flex;
@@ -178,13 +304,124 @@ footer .social div {
 footer .social div i {
   font-size: 24px;
 }
+footer .contact-container {
+  padding-left: 0px !important;
+}
 footer .created-by {
   color: #F2F2F2;
   font-size: 11px;
   font-family: "Montserrat";
   font-weight: 500;
+  padding-bottom: 25px;
 }
 footer .created-by a {
   font-weight: 700;
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .hero h1, .hero h2, .hero h3, .hero p {
+    padding-left: 20%;
+  }
+  .hero h1 {
+    font-size: 48px;
+    max-width: 550px;
+  }
+  .hero h2 {
+    font-size: 48px;
+    max-width: 350px;
+  }
+  .hero #hero1 {
+    display: none;
+  }
+  .hero #hero2 {
+    display: block;
+  }
+  .hero h3 {
+    font-size: 18px;
+  }
+  .hero p {
+    font-size: 18px;
+    max-width: 350px;
+  }
+  .hero .contact-container {
+    padding-left: 20% !important;
+  }
+  .hero .contact-container h4 {
+    font-size: 14px;
+  }
+  .offerings {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .offerings h1 {
+    font-size: 36px;
+    max-width: 350px;
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
+  .offerings .cards-container {
+    flex-direction: row;
+    padding-left: 0;
+  }
+  .projects {
+    padding-bottom: 175px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .projects h1 {
+    font-size: 36px;
+    max-width: 400px;
+  }
+  .projects .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects .projects-container .translate {
+    transform: translateY(200px);
+  }
+  .projects .see-more {
+    justify-content: flex-end;
+    transform: translateY(200px);
+  }
+  .meet-the-team {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+  }
+  .meet-the-team h2 {
+    font-size: 18px;
+  }
+  .meet-the-team h1 {
+    font-size: 35px;
+    width: 280px;
+  }
+  .meet-the-team p {
+    font-size: 16px;
+    width: 280px;
+  }
+  .about-us {
+    padding-left: 10%;
+  }
+  .about-us h1 {
+    font-size: 36px;
+    width: 900px;
+  }
+  footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  footer .footer-container {
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+  footer .footer-container .contact-container {
+    padding-right: 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */

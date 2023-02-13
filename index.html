@@ -12,23 +12,25 @@
 <body>
     <header>
         <h1 class="logo">Edie</h1>
-        <nav>
+        <nav class="d-none">
             <a href="#">Home</a>
             <a href="#">Services</a>
             <a href="#">Our Works</a>
             <a href="#">Clients</a>
             <a href="#">Contact</a>
         </nav>
+        <i class="fa-solid fa-bars"></i>
     </header>
 
     <section class="hero">
         <div>
-            <h3 class="padding-mobile">Unhappy with your website?</h3>
-            <h1 class="padding-mobile">We create beautiful and fast web services</h1>
+            <h3>Unhappy with your website?</h3>
+            <h1>We create beautiful and fast web services</h1>
         </div>
-        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Hero Image">
-        <h2 class="padding-mobile">Story, emotion and purpose</h2>
-        <p class="padding-mobile">
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Hero Image" id="hero1">
+        <img src="img/heroImage.jpg" alt="Hero Image" id="hero2">
+        <h2>Story, emotion and purpose</h2>
+        <p>
             We help transform your ideas into real world applications that will outperform 
             your toughest competition and help you achieve your strategic goals in short period of time.
         </p>
@@ -75,27 +77,87 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-links">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Our Works</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="social">
-            <h1>Edie</h1>
-            <div>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-square-twitter"></i>
+    <section class="projects">
+        <h1>Good design means good business</h1>
+        <div class="projects-container">
+            <div class="project translate">
+                <img src="img/smarthome.jpg" alt="Smart home dashboard project screenshot">
+                <h3>Full stack application</h3>
+                <h2>Smart home dashboard</h2>
+            </div>
+            <div class="project">
+                <img src="img/onboard.png" alt="Smart home dashboard project screenshot">
+                <h3>UX/UI design</h3>
+                <h2>Onboard application</h2>
+            </div>
+            <div class="project translate">
+                <img src="img/booking.png" alt="Smart home dashboard project screenshot">
+                <h3>Mobile application</h3>
+                <h2>Booking system</h2>
+            </div>
+            <div class="project">
+                <img src="img/juice-product.png" alt="Smart home dashboard project screenshot">
+                <h3>Front End application</h3>
+                <h2>Juice product homepage</h2>
             </div>
         </div>
-        <div class="contact-container" style="padding-left: 25px; padding-right: 45px;">
-            <h4>Want us to contact you?</h4>
-            <div class="contact">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <button type="submit">Join</button>
+        <div class="see-more"><a href="#">see more<i class="fa-solid fa-arrow-right-long"></i></a></div>
+    </section>
+
+    <section class="meet-the-team">
+        <div>
+            <h2>Meet the team</h2>
+            <h1>We are chilled and a laidback team</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="team-images">
+            <div id="person3">
+                <img src="img/person3.png" alt="Person">
+            </div>
+            <div>
+                <img src="img/person1.png" alt="Person" id="person1">
+                <img src="img/person2.png" alt="Person">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h1>
+            “Fast and outstanding resutls. Edie understands their 
+            customer’s needs. They have a young and talented team.”
+        </h1>
+        <div class="about-us-container">
+            <img src="img/person4.png" alt="">
+            <div>
+                <h2>Carlos Tran</h2>
+                <h3>The Decorate Gatsby</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Our Works</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="social">
+                <h1>Edie</h1>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+            </div>
+            <div class="contact-container" style="padding-left: 25px; padding-right: 45px;">
+                <h4>Want us to contact you?</h4>
+                <div class="contact">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <button type="submit">Join</button>
+                </div>
             </div>
         </div>
         <div class="created-by">created by <a href="#">marinactonci</a> - devChallenges.io</div>
