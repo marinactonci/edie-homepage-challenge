@@ -9,6 +9,7 @@ html, body {
   overflow-x: hidden;
   font-family: "Poppins";
   color: #333333;
+  scroll-behavior: smooth;
 }
 
 h1, h2 {
@@ -41,17 +42,41 @@ header {
   justify-content: space-between;
   padding: 15px;
 }
+header nav {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2D9CDB;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 100;
+}
+header nav a {
+  color: white;
+}
 header a {
   color: #333333;
 }
 header i {
   font-size: 24px;
+  z-index: 1000;
 }
 
 .logo {
   font-family: "Heebo";
   font-weight: 800;
   font-size: 24px;
+  z-index: 1000;
+}
+
+.nav {
+  display: none;
 }
 
 .hero {
@@ -313,6 +338,8 @@ footer .created-by {
   font-family: "Montserrat";
   font-weight: 500;
   padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
 }
 footer .created-by a {
   font-weight: 700;
@@ -320,6 +347,13 @@ footer .created-by a {
 }
 
 @media (min-width: 768px) {
+  .nav {
+    display: flex;
+    gap: 40px;
+  }
+  #hamburger {
+    display: none;
+  }
   .hero {
     padding-left: 5%;
     padding-right: 5%;
